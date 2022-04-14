@@ -35,6 +35,16 @@ unexpectedly become high cost (outlier claims) **[2].**
 Eventually, this would help the company take better
 informed decisions.
 
+## Modelling Algorithms used
+
+- Logistic Regression
+- KNN
+- Decision Tree
+- Naive Bayes
+- Random Forest
+- XGBoost
+- CatBoost  
+
 ## References
 
 **[1] Dataset** : https://www.kaggle.com/mhdzahier/travel-insurance/
