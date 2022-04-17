@@ -45,6 +45,8 @@ informed decisions.
 - XGBoost
 - CatBoost  
 
+## Added Cross Validation
+
 **The data is imbalanced with skewed class proportions as the Insurances with Claimed Status make only 1.4% of total claims**
 
 ## References
