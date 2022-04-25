@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Predict Claim Status</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    <input type="text" name="Agency Type" placeholder="Agency Type" required="required" />
+    <input type="text" name="Distribution Channel" placeholder="Distribution Channel" required="required" />
+    <input type="integer" name="Duration" placeholder="Duration" required="required" />
+    <input type="float" name="Net Sales" placeholder="Net Sales" required="required" />
+    <input type="float" name="Commision (in value)" placeholder="Commision (in value)" required="required" />
+    <input type="integer" name="Age" placeholder="Age" required="required" />
+    <input type="text" name="Agency" placeholder="Agency" required="required" />
+    <input type="text" name="Product Name" placeholder="Product Name" required="required" />
+    <input type="text" name="Destination" placeholder="Destination" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
