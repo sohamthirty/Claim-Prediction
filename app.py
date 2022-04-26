@@ -22,7 +22,7 @@ X_test.loc[:,:] = sc.transform(X_test.loc[:,:])
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('h2.html')
 
 @app.route('/predict',methods=['POST'])
 def predict():
@@ -138,7 +138,7 @@ def predict():
 
     
 
-    return render_template('index.html', prediction_text='Insurance Claim Status : {}'.format(output))
+    return render_template('h2.html', prediction_text='Insurance Claim Status : {}'.format(output))
 
 if __name__ == "__main__":
     app.run(debug=True)
