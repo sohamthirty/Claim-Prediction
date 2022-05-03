@@ -129,13 +129,17 @@ def predict():
 
     prediction = model.predict(data_new)
 
-    output = str(prediction[0])
+    output = prediction[0]
 
     #e = [1,2,3]
 
     #output = pd.DataFrame(data=[f])
     #output = f
 
+    if output == 0 :
+        output = "No"
+    else:
+        output = "Yes"
     
 
     return render_template('h2.html', prediction_text='Insurance Claim Status : {}'.format(output))
