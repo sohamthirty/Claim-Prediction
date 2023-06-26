@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'IClaim2'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1B9857D8FC1D431E8B4B35A3673DD838 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_* }}
