@@ -53,4 +53,4 @@ informed decisions.
 
 **[1] Dataset** : https://www.kaggle.com/mhdzahier/travel-insurance/
 
-**[2] Predictive analytics in Insurance industry** : https://www.duckcreek.com/blog/predictive-analyiticsreshaping-insurance-industry/
+**[2] Predictive analytics in Insurance industry** : https://online.maryville.edu/blog/predictive-analytics-in-insurance/
